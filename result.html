@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation Result</title>
+</head>
+<body>
+    <h1>Segmentation Result</h1>
+    <img src="{{ url_for('static', filename='segmented_masks/' + image_file) }}" alt="Segmented Mask">
+    <p>Uploaded Image: {{ image_file }}</p>
+</body>
+</html>
